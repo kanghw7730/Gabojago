@@ -6,6 +6,7 @@ def solution(stones, k):
 
 
     # 문제에서 제한 조건은 2가지, 1. 건너는 사람은 디딤돌 중 최고 수보다 많을 수 없다. 2. 건너는 사람은 연속된 디딤돌 수 k의 n보다 많을 수 없다.
+    
     while start <= limit:
         if (start+limit) % 2 == 0:    # 이진 탐색 조건
             mid = (start+limit) // 2
